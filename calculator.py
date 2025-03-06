@@ -6,7 +6,7 @@ def calculator():
 
         if z == "exit":
             print("La revedere!")
-            break  # Iese din buclă și termină programul
+            break  
 
         if z == "+":
             rezultat = x + y
@@ -23,11 +23,9 @@ def calculator():
             rezultat = "Operație invalidă!"
 
         print("Rezultatul este:", rezultat)
-
-        # Întreabă dacă vrea să continue
         continua = input("Vrei să faci altă operație? (da/nu): ").lower()
         if continua != "da":
             print("La revedere!")
-            break  # Iese din buclă dacă utilizatorul nu vrea să continue
+            break  
 
 calculator()
